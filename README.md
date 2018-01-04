@@ -19,6 +19,7 @@ Fork:
 
   after incrementing pc register fork handler creats a thread*child sets its parent pid to current threads pid and sets childs pid
   then clones parent addresspace using AddrSpace(int numParentPages, int parentStartPhysPage) and sets its registers to parent regs and adds child to ready to run list.(output and input of fork will be written in register 2 and 4)
+
 Join:
 
   ExecHandler reads input of join function (pid) from register 4 ?
