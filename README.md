@@ -22,7 +22,7 @@ Fork:
 
 Join:
 
-  ExecHandler reads input of join function (pid) from register 4 ?
+  JoinHandler reads input of join function (pid) from register 4 . if that childs status is CHILD_LIVE or PARENT_WAITING  keep its parent sleep until the child finish and change its status.
   at the end writes the child status in register 2.
 Exec:
 
